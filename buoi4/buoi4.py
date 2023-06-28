@@ -1,5 +1,5 @@
 '''
-- set{}
+- set{} không chứa phần tử giống nhau
 - tuple()
 '''
 # tuple
