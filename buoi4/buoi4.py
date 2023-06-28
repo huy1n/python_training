@@ -3,18 +3,18 @@
 - tuple()
 '''
 # tuple
-'''tup1 = 1, 2, 3
+tup1 = 1, 2, 3
 tup2 = (1, 2, 3)
 print(type(tup1))
-print(type(tup2))'''
+print(type(tup2))
 
-'''tup1 = 1, 2, 3
+tup1 = 1, 2, 3
 print(tup1[0])
 tup1 += (4, 1, 2, 5, 7)
-print(tup1)'''
+print(tup1)
 
 # set
-'''set1 = set()
+set1 = set()
 print(set1)
 set1.add(1)
 set1.add(1)
@@ -30,7 +30,7 @@ print(set1 is set2)
 print(set1 == set2)
 print(set1)
 set1.clear()
-print(set1)'''
+print(set1)
 
 set1 = {1, 2, 34, 4, 65, 677}
 any_value = set1.pop()
