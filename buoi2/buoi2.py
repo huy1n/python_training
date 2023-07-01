@@ -1,7 +1,6 @@
-movies_list = ['naruto','thor','suzume']
-amount = len(movies_list)
-mid = movies_list[amount // 2]
-print(mid)
+friend = [('bob', 'male'), ('anna', 'female'), ('john', 'male')]
+print(friend)
 
-first = movies_list.pop(0)
-print(first)
+friend = [('bob', 'male'), ('anna', 'female'), ('john', 'male')]
+del friend[0]
+print(friend)

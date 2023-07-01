@@ -1,41 +1,24 @@
-'''
-- set{} không chứa phần tử giống nhau
-- tuple()
-'''
-# tuple
-tup1 = 1, 2, 3
-tup2 = (1, 2, 3)
-print(type(tup1))
-print(type(tup2))
+# set nâng cao
 
-tup1 = 1, 2, 3
-print(tup1[0])
-tup1 += (4, 1, 2, 5, 7)
-print(tup1)
+set1 = {1, 2, 3, 4, 5, 6}
+set2 = {1, 2, 4, 7, 9, 16}
 
-# set
-set1 = set()
-print(set1)
-set1.add(1)
-set1.add(1)
-set1.add(1)
-set1.add(1)
-set1.add("kenny")
-set1.update([2, 3, 4, 5])
-# không thể chèn đc list vào set vì các giá trị list có thể được thay đổi
-set1.add([2, 3, 4, 5])
-set1.remove(1)
-set2 = set1.copy()
-print(set1 is set2)
-print(set1 == set2)
-print(set1)
-set1.clear()
-print(set1)
+# tìm phần tử chung của 2 set
+set3 = set1.intersection(set2)
+print(set1 & set2)
+print(set3)
 
-set1 = {1, 2, 34, 4, 65, 677}
-any_value = set1.pop()
-print(any_value)
+# tìm phần tử khác nhau, có trong set 1 nhưng không có trong set 2
+set4 = set1.difference(set2)
+print(set1 - set2)
+print(set4)
 
-'''
+# lấy ra phần tử có trong 2 set
+set5 = set1.union(set2)
+print(set1 | set2)
+print(set5)
 
-'''
+# lấy tất cả nhưng trừ đi phần chung
+set6 = set1.symmetric_difference(set2)
+print(set1 ^ set2)
+print(set6)
