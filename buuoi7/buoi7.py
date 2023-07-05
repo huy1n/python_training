@@ -1,29 +1,42 @@
-'''
-for
-while
-vòng lặp lồng nhau
-break: thoat vong lap
-countinue: bỏ qua các câu lệnh bên dưới nó và chuyển sang một vòng lặp mới
-'''
+""" 
+list, set, tuple, dict comprehensions
+"""
+lst = [1, 2, 3, 4]
+new_lst = [v*2 for v in lst]
+print(new_lst)
 
-# for _ in range(5):
-#     print('hello world')
+set_a = {'a', 'b', 'c'}
+set_b = {i.upper() for i in set_a}
+print(set_b)
 
-# for i in range(21):
-#     if i % 2 == 0:
-#         print(i, end=' ')
+dict = {
+    'a': 1,
+    'b': 2,
+    'c': 3
+}
+new_dict = {
+    k: v * 2
+    for k, v in dict.items()
+}
 
-# s = input('> ')
-# while s != 'q':
-#     print('hello')
+print(new_dict)
 
-# vòng lặp for lặp số lần lặp xác định, while lặp số lần không xác định
+""" zip. enumerate """
 
-for i in range(5):
-    for j in range(3):
-        print(i, j, sep=' - ')
+lst = [1, 2, 3, 4]
+tup = (1, 2, 3, 4)
+_zip = zip(lst, tup)
+print(list(_zip))
 
-for i in range(1, 21):
-    if i % 2 == 0:
-         continue #bỏ qua fong print
-    print(i, end = ' ')
+lst1 = ['a', 'b', 'c']
+print(list(enumerate(lst1)))
+
+stu = {
+    'name': 'bob',
+    'age': 23,
+    'id': 'sv001'
+}
+
+for item in enumerate(lst):
+    idx, value = item
+    print(f'{idx} - {value}')
